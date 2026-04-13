@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="utf-8">
-    <title>Interactive Drawing App</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-</head>
-<body>
-    <h1>Drawing App</h1>
-    <p>Click and drag to draw.</p>
-    <canvas></canvas>
-    <button id="clear"">Clear</button>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Interactive Drawing App</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+        <div class="nav">
+            <p>Drawing App<br>Click and drag to draw.</p>
+            <div class="clr" data-clr="black"></div>
+            <div class="clr" data-clr="red"></div>
+            <div class="clr" data-clr="orange"></div>
+            <div class="clr" data-clr="blue"></div>
+            <div class="clr" data-clr="purple"></div>
+            <div class="clr" data-clr="green"></div>
+            <div class="clr" data-clr="yellow"></div>
+            <div class="clr" data-clr="white"></div>
+            <button class="clear">Clear</button>
+            <button class="save">Save</button>
+            <input type="color" id="favcolor" value="#FFFFFF">
+            <input type="range" name="ageInputName" id="ageInputId" value="5" min="1" max="10" oninput="ageOutputId.value = ageInputId.value">
+            <output id="ageOutputId">5</output>
+            <div class="emoji">🎨</div>
+        </div>
+    </body>
+</html>
